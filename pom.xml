@@ -40,6 +40,8 @@
             ${project.groupId}.${project.artifactId}*;version=${project.version}
         ]]></osgi.export>
         <osgi.private />
+
+        <service-locator.version>1.0.0-SNAPSHOT</service-locator.version>
         <wicket.version>6.9.1</wicket.version>
     </properties>
 
@@ -103,6 +105,17 @@
                 <groupId>org.apache.geronimo.specs</groupId>
                 <artifactId>geronimo-servlet_3.0_spec</artifactId>
                 <version>1.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.code-house.service</groupId>
+                <artifactId>api</artifactId>
+                <version>${service-locator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.code-house.service</groupId>
+                <artifactId>core</artifactId>
+                <version>${service-locator.version}</version>
             </dependency>
 
             <!-- Wicket dependencies -->
